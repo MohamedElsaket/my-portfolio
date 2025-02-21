@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
 import { FiDownload } from "react-icons/fi";
-import Social from "./Social";
 import Photo from "./Photo";
-import Stats from "./Stats";
-import Link from "next/link";
+import Social from "./Social";
+import { Button } from "./ui/button";
 
 export default function Info() {
   return (
@@ -51,8 +49,6 @@ export default function Info() {
           </div>
         </motion.div>
       </div>
-
-      {/* <Stats /> */}
     </section>
   );
 }
