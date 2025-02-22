@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
 
+import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import {
+  RiBootstrapLine,
+  RiJavascriptLine,
+  RiNextjsLine,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+
 const services = [
   {
     number: "01",
@@ -12,24 +21,58 @@ const services = [
   },
   {
     number: "02",
-    title: "UI & UX Designer",
+    title: "Web Designer",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum impedit consequuntur reprehenderit id iste vitae. Amet repellendus iusto illum ipsam enim blanditiis neque? Laudantium non sint molestiae labore magni.",
     href: "",
   },
+];
+
+const technologies = [
   {
-    number: "03",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum impedit consequuntur reprehenderit id iste vitae. Amet repellendus iusto illum ipsam enim blanditiis neque? Laudantium non sint molestiae labore magni.",
-    href: "",
+    name: "Reactjs",
+    icon: <FaReact />,
+    description: "A JavaScript library for building user interfaces",
   },
   {
-    number: "04",
-    title: "SEO",
+    name: "Next.js",
+    icon: <RiNextjsLine />,
+    description: "A React framework for production",
+  },
+  {
+    name: "TypeScript",
+    icon: <TbBrandTypescript />,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum impedit consequuntur reprehenderit id iste vitae. Amet repellendus iusto illum ipsam enim blanditiis neque? Laudantium non sint molestiae labore magni.",
-    href: "",
+      "A typed superset of JavaScript that compiles to plain JavaScript",
+  },
+  {
+    name: "JavaScript",
+    icon: <RiJavascriptLine />,
+    description:
+      "A high-level, often just-in-time compiled, and multi-paradigm programming language",
+  },
+  {
+    name: "HTML",
+    icon: <FaHtml5 />,
+    description:
+      "The standard markup language for documents designed to be displayed in a web browser",
+  },
+  {
+    name: "CSS",
+    icon: <FaCss3Alt />,
+    description:
+      "A style sheet language used for describing the presentation of a document written in HTML or XML",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <RiTailwindCssFill />,
+    description: "A utility-first CSS framework for rapid UI development",
+  },
+  {
+    name: "Bootstrap",
+    icon: <RiBootstrapLine />,
+    description:
+      "A free and open-source CSS framework directed at responsive, mobile-first front-end web development",
   },
 ];
 
@@ -59,14 +102,28 @@ export default function Services() {
                   <BsArrowDownRight className="text-primary text-xl xl:text-3xl" />
                 </Link>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold leading-none text-white group-hover:text-accent transition-all duration-300 pb-2">
                 {item.title}
               </h2>
-              <p className="text-white/60 mb-2 text-md">{item.description}</p>
+              {/* <p className="text-white/60 mb-2 text-md">{item.description}</p> */}
               <div className="border-b border-white/20 w-full" />
             </div>
           ))}
         </motion.div>
+      </div>
+
+      <div className="container mx-auto mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {technologies.map((tech, i) => (
+            <div className="group flex flex-col items-center">
+              <p className="text-5xl py-2 group-hover:text-accent transition-all duration-300">
+                {tech.icon}
+              </p>
+              <h3 className="text-xl font-semibold ">{tech.name}</h3>
+              <p className="text-white/60 text-center ">{tech.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

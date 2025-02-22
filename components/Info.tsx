@@ -25,7 +25,7 @@ export default function Info() {
               passion for continuous learning and improvement.
             </p>
 
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8 items-center lg:items-start">
               <Button
                 size="lg"
                 variant="outline"
