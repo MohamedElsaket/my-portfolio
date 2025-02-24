@@ -16,6 +16,12 @@ const projects = {
       href: "https://university-library-ten-sand.vercel.app/",
     },
     {
+      projectName: "Forever",
+      image: "/assets/work/forever.png",
+      technologies: "React.js - TailwimdCss - Context - React-Router",
+      href: "https://mohamedelsaket.github.io/clothes-e-commerce/",
+    },
+    {
       projectName: "FastPizza.",
       image: "/assets/work/Fast React Pizza.png",
       technologies: "React.js - React Router - TailwimdCss - Redux",
