@@ -70,7 +70,7 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeIn" }}
         >
           <div className="flex flex-col xl:flex-row gap-[60px]">
-            <div className="min-h-[70vh] w-full">
+            <div className="min-h-[80vh] w-full">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -86,7 +86,7 @@ export default function Projects() {
                   />
                   <span> {projects.title} </span>
                 </h3>
-                <ScrollArea className="h-[500px]">
+                <ScrollArea className="h-[70vh]">
                   <ul className="">
                     {projects.items.map((item, i) => (
                       <Link
