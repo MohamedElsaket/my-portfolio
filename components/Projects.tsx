@@ -16,7 +16,13 @@ const projects = {
       href: "https://university-library-ten-sand.vercel.app/",
     },
     {
-      projectName: "Forever",
+      projectName: "E-Commerce",
+      image: "/assets/work/next-ecommerce.png",
+      technologies: "Next.js - React.js - Redux - TailwimdCss - Wix Studio",
+      href: "https://next-ecommerce-ten-black.vercel.app/",
+    },
+    {
+      projectName: "Forever e-commerce",
       image: "/assets/work/forever.png",
       technologies: "React.js - TailwimdCss - Context - React-Router",
       href: "https://mohamedelsaket.github.io/clothes-e-commerce/",

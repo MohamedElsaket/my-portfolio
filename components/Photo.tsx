@@ -13,7 +13,7 @@ export default function Photo() {
             opacity: 1,
             transition: { duration: 0.8, delay: 0.5, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px]"
+          className="w-[250px] h-[250px] xl:w-[498px] xl:h-[498px]"
         >
           <Image
             src={"/assets/my-photo.jpg"}

@@ -64,7 +64,7 @@ const technologies = [
       "A style sheet language used for describing the presentation of a document written in HTML or XML",
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: <RiTailwindCssFill />,
     description: "A utility-first CSS framework for rapid UI development",
   },
@@ -113,14 +113,14 @@ export default function Services() {
       </div>
 
       <div className="container mx-auto mt-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {technologies.map((tech, i) => (
-            <div className="group flex flex-col items-center">
+            <div key={i} className="group flex flex-col items-center">
               <p className="text-5xl py-2 group-hover:text-accent transition-all duration-300">
                 {tech.icon}
               </p>
               <h3 className="text-xl font-semibold ">{tech.name}</h3>
-              <p className="text-white/60 text-center ">{tech.description}</p>
+              {/* <p className="text-white/60 text-center ">{tech.description}</p> */}
             </div>
           ))}
         </div>

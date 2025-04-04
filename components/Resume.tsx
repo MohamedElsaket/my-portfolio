@@ -67,7 +67,7 @@ export default function Resume() {
                     {experience.items.map((item, i) => (
                       <li
                         key={i}
-                        className="bg-[#232329] h-[240px] py-6 px-4 xl:px-10 rounded-xl flex flex-col justify-between gap-1"
+                        className="bg-[#232329] h-full py-6 px-4 xl:px-10 rounded-xl flex flex-col justify-between gap-1"
                       >
                         <span className="text-accent">{item.duration}</span>
 
